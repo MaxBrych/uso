@@ -1,6 +1,7 @@
 "use client";
 
 import { WelcomeToLens } from "@/components/WelcomeToLens";
+import SessionManager from "@/components/login/SessionManager";
 import Image from "next/image";
 
 export default function Home() {
@@ -33,8 +34,7 @@ export default function Home() {
 
       <div className="flex place-items-center flex-col max-w-lg my-16">
         <h1 className="mb-3 text-3xl font-semibold">Welcome to Lens</h1>
-        <WelcomeToLens />
-      </div>
+        <WelcomeToLens /> <SessionManager />     </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
         <a
